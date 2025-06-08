@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filex ❤️ Dorie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(to right, #ffe5ec, #fcd5ce);
+  color: #333;
+  overflow-x: hidden;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+nav h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #d81b60;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #6a1b9a;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #c2185b;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: transparent;
+}
+
+header h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #d81b60;
+  animation: fadeInDown 1.2s ease-out;
+}
+
+.love-container {
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  align-items: center;
+  gap: 2rem;
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #d81b60;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: pulse 3s infinite;
+}
+
+.profile h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #c2185b;
+  margin-top: 0.5rem;
+}
+
+.message {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #4e2a59;
+  position: relative;
+}
+
+.message::before {
+  content: '“';
+  font-size: 4rem;
+  color: #e91e63;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  color: #6a1b9a;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <h1>Filex & Dorie</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#love">Our Love</a></li>
+      <li><a href="#message">Message</a></li>
+    </ul>
+  </nav>  <header>
+    <h2>Two hearts. One love. Forever bound.</h2>
+  </header>  <section class="love-container" id="love">
+    <div class="profile">
+      <img src="fff.jpg" alt="Filex" />
+      <h2>Filex</h2>
+    </div>
+    <div class="message" id="message">
+      From the first moment, Dorie, you’ve been the light in my life. Your love is poetry, your smile is sunshine, and your presence makes everything whole. This is not just affection—it's a soul-deep connection, a bond stronger than time. I love you endlessly.
+    </div>
+    <div class="profile">
+      <img src="ddd.jpg" alt="Dorie" />
+      <h2>Dorie</h2>
+    </div>
+  </section>  <footer>
+    Created with ❤️ by Filex for Dorie &mdash; Forever and Always
+  </footer>  <audio autoplay loop hidden>
+    <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
